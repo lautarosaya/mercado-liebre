@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
 
 .tamaño-descuentos-descripciones {
   font-size: 16px;
+  color: green;
 }
 
 .input-style {
@@ -107,6 +109,7 @@ píxeles. */
 .child-product {
   border-top: #ebebeb solid 1px;
   margin: 15px;
+  position: relative;
 }
 
 .article-bg {
@@ -114,9 +117,51 @@ píxeles. */
   border-radius: 10px;
 }
 
+.article-all {
+  width: 100%;
+}
+
+/* Solucion extra */
+/* .shipping-car {
+  display: block;
+  font-size: 15px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 70vw;
+  top: -15px;
+} */
+
+.child-product i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+
+.porcent-pos {
+  display: flex;
+}
+
+.porcent-pos p {
+  margin-left: 20px;
+  align-self: center;
+}
+
 /* Media queris */
 
-@media (min-width: 481px) {
+@media (min-width: 481px) and (max-width: 768px) {
   /* tablet */
   .product-shadow {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -127,9 +172,15 @@ píxeles. */
   .child-burger-menu {
     display: none;
   }
+  .s-f {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1279px) {
   /* laptop */
   .product-shadow {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -139,6 +190,10 @@ píxeles. */
   }
   .child-burger-menu {
     display: none;
+  }
+  .s-f {
+    display: flex;
+    gap: 10px;
   }
 }
 
@@ -152,5 +207,9 @@ píxeles. */
   }
   .child-burger-menu {
     display: none;
+  }
+  .s-f {
+    display: flex;
+    gap: 10px;
   }
 }
