@@ -396,38 +396,14 @@ píxeles. */
   .product-shadow {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
-  .nav-class {
-    display: block;
-  }
   .child-burger-menu {
     display: none;
   }
   .s-f {
     display: flex;
-    /* gap: 10px; */
   }
-  /* .header-flex-container-dos {
-    display: flex;
-    flex-direction: row;
-  } */
 
-  /* .header-flex-container-dos p i {
-    margin-top: 10px;
-    flex-basis: 33%;
-  } */
-  /* .header-flex-container img {
-    flex-basis: 33%;
-    height: 40px;
-    margin-top: 20px;
-  } */
-
-  /* .header-flex-container .search-f {
-    flex-basis: 33%;
-    height: 30px;
-    margin-top: 25px;
-  } */
-  /* .header-flex-container {
-    display: flex;
-    justify-content: space-around;
-  } */
+  .parrafo-center{
+    margin-top: 3rem;
+  }
 }
