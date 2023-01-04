@@ -311,6 +311,11 @@ píxeles. */
   justify-content: center;
 }
 
+.footer{
+  background-color: gainsboro;
+  padding-top: 10px;
+}
+
 
 /* Media queris */
 
@@ -371,8 +376,24 @@ píxeles. */
 }
 
 @media (min-width: 769px) {
+  .footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .tamaño{
+    width: 30%;
+  }
+  
   .btn{
     width: 30%;
+    transition: 1s;
+  }
+
+  .btn:hover{
+    background-color: #0022AA;
   }
 
   .d-f{
